@@ -11,4 +11,4 @@ makepkg -si ./pacaur/PKGBUILD
 
 pacaur -S cower pacaur
 
-rm -r ./cower ./pacaur
+rm -rf ./cower ./pacaur
