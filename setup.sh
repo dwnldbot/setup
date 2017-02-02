@@ -11,7 +11,6 @@ bash ./vim.sh
 
 # Configs
 # mutt, termite, i3
-cp xinitrc ~/.xinitrc
 cp Xresources .Xresources
 
 # pacaur

@@ -1,0 +1,7 @@
+! State:           'bg',     'fg',     'bgalt',  'hlbg',   'hlfg'
+rofi.color-normal: #2b303b,  #c0c5ce,  #2b303b,  #2b303b,  #c0c5ce
+rofi.color-urgent: #2b303b,  #c0c5ce,  #2b303b,  #2b303b,  #c0c5ce
+rofi.color-active: #2b303b,  #c0c5ce,  #2b303b,  #2b303b,  #c0c5ce
+
+!                  'background', 'border'
+rofi.color-window: #2b303b,      #2b303b,
