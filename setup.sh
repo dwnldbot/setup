@@ -9,7 +9,6 @@ pacman -S vim mutt git firefox xorg-server xorg-server-utils xorg-xinit arc-gtk-
 # Vim
 bash ./vim.sh
 
-# Configs
 # mutt, termite, i3
 cp Xresources .Xresources
 
@@ -21,8 +20,11 @@ pacman -S i3lock
 # i3
 mkdir -p ~/.config/i3
 cp -r ./i3/* ~/.config/i3
-#TODO COPY i3blocklets
+cp ./blocklets/* /usr/lib/i3blocks/
+
 #TODO fontawesome
+
+# Xinit
 cp /etc/X11/xinit/xinitrc ~/.xinitrc
 echo "exec i3" >> ~/.xinitrc
 
@@ -37,10 +39,6 @@ cp -r ./gtk-3.0/* ~/.config/gtk-3.0
 # firmware
 pacaur -S broadcom-wl-dkms aic94xx-firmware
 mkinitcpio -p linux
-
-
-useradd -m -g users -G wheel,games,power,optical,storage,scanner,lp,audio,video -s /bin/bash b0b
-passwd b0b
 
 # TODO SUDO
 
