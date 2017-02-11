@@ -7,7 +7,8 @@ font = Ubuntu Mono derivative Powerline 13
 foreground      = #dadfea
 foreground_bold = #dadfea
 cursor          = #dadfea
-background      = #22252d
+background      = #1f231a
+# background      = #22252d
 
 # black
 color0  = #30343f
