@@ -46,3 +46,4 @@ mkinitcpio -p linux
 echo -e "pcm.!default {\n\ttype hw\n\tcard Generic\n}\nctl.!default {\n\ttype hw\n\tcard Generic\n}" > /etc/asound.conf
 echo -e "defaults.pcm.card 1\ndefaults.ctl.card 1" > ~/.asoundrc
 
+bash ./firewall.sh
