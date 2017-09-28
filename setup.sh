@@ -30,7 +30,7 @@ echo "exec i3" >> ~/.xinitrc
 
 # Termite
 mkdir -p ~/.config/termite
-cp -r ./termite/* ~/.config/termite
+cp termiteconfig ~/.config/termite/config
 
 # GTK
 mkdir -p ~/.config/gtk-3.0

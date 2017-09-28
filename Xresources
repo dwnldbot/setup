@@ -5,3 +5,28 @@ rofi.color-active: #2b303b,  #c0c5ce,  #2b303b,  #2b303b,  #c0c5ce
 
 !                  'background', 'border'
 rofi.color-window: #2b303b,      #2b303b,
+
+! Workaround of https://www.reddit.com/r/unixporn/comments/6pmzgf/mockup_clean_green/
+! by unix121
+
+! special
+*.foreground:   #ffffff
+*.background:   #2e3440
+*.cursorColor:  #ffffff
+
+*.color0:       #2e3440
+*.color8:       #566177
+*.color1:       #50fa7b
+*.color9:       #50fa7b
+*.color2:       #47de6d
+*.color10:      #47de6d
+*.color3:       #41ca63
+*.color11:      #41ca63
+*.color4:       #3bb75a
+*.color12:      #3bb75a
+*.color5:       #37aa53
+*.color13:      #37aa53
+*.color6:       #31984a
+*.color14:      #31984a
+*.color7:       #566177
+*.color15:      #ffffff
