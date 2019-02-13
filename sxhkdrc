@@ -1,0 +1,62 @@
+alt + i
+	rofi -show run
+
+# move windows around
+mod4 + {h,j,k,l}
+	wmv {-20 0, 0 20, 0 -20, 20 0} $(pfw)
+
+#resize windows
+mod4 + shift + {h,j,k,l}
+	wrs {-20 0, 0 20, 0 -20, 20 0} $(pfw)
+
+# focus window after position 
+alt + {h,j,k,l}
+        closest.sh {h, j, k, l}
+
+# move windows to center
+alt + g
+	center.sh $(pfw)
+
+# fullscreen
+alt + f
+	fullscreen.sh $(pfw)
+
+# tile windows
+alt + t
+        tile.sh
+
+# close window
+alt + shift + q
+	killw $(pfw)
+
+# open terminal
+alt + q
+        st
+
+# open browser
+alt + w
+        qutebrowser
+
+# kill wmutils(?)
+alt + shift + e
+        killall sxhkd
+
+# lock screen
+alt + shift + l
+        slock
+
+# suspend
+alt + shift + s
+        slock systemctl hybrid-sleep
+
+# hibernate
+alt + shift + h
+        slock systemctl hibernate
+
+# switch to workspace
+alt + {0,1,2,3,4,5,6,7,8,9}
+        workspace.sh -g {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
+
+# move current window to workspace
+alt + shift + {0,1,2,3,4,5,6,7,8,9}
+        workspace.sh -m {0, 1, 2, 3, 4, 5, 6, 7, 8, 9}
